@@ -1,0 +1,166 @@
+@font-face {
+    src: url("fonts/ScienceGothic[YOPQ\,slnt\,wdth\,wght]\ \(1\).ttf") format("truetype"),
+        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+
+    font-family: 'Science Gothic';
+    font-style: normal;
+    font-weight: normal;
+    }
+    *{
+    }
+    body{
+    background-color: rgb(255, 255, 255);
+    background-image: url("background3.png");
+    font-family: 'Science Gothic';
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/* how the page wrapper will appear on mobile */
+.page-wrapper{
+    width: min(100% - 3rem, 80ch);
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+#history {
+grid-area: h;
+}
+
+#variations{
+grid-area: v;
+}
+
+#alphabet {
+grid-area: a;
+background-color: white;
+padding:10px;
+}
+}
+/* CSS for the footer */
+footer{
+    background-color: rgb(255, 238, 0);
+    padding: 10px;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+/* variable font animation */
+h3{
+    margin-top: 0px;
+        padding-top: 0px;
+        font-weight: 10;
+        font-size: 15px;
+        text-align: center;
+        position: relative; 
+        top: 100px;
+        right:21%;
+    font-weight:20; 
+    text-align: center;
+    font-size: 5em;
+    animation: weightChange 7s infinite;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings: "YOPQ" 122, "slnt" 0, "wdth" 100, "wght" 100;
+    }
+    50%{font-variation-settings: "YOPQ" 122, "slnt" 0, "wdth" 100, "wght" 900;
+    }
+    
+}
+#variations{
+    margin-left: -152px;
+    margin-top: -930px;
+}
+.weight{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-variation-settings: "YOPQ" 122, "slnt" 0, "wdth" 100, "wght" 900;
+}
+.width{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-variation-settings: "YOPQ" 122, "slnt" 0, "wdth" 200, "wght" 100;
+}
+.y-opaque{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-variation-settings: "YOPQ" 122, "slnt" 0, "wdth" 100, "wght" 100;
+}
+.slant{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-variation-settings: "YOPQ" 122, "slnt" -10, "wdth" 100, "wght" 100;
+}
+/* variable font that changes on hover */
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+h4{
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 30px;
+    font-family: 'Science gothic';
+    position: relative; 
+    text-align: left;
+    top: -1550px;
+    left: 110%;
+    color: rgb(0, 0, 0);
+}
+h5{
+        margin-top: 0px;
+        padding-top: 0px;
+        font-weight: 10;
+        font-size: 15px;
+        text-align: left;
+        position: relative; 
+        top: -1585px;
+        left: 110%;
+        color: #000000;
+}
+h6{
+    margin-top: 0px;
+        padding-top: 0px;
+        font-weight: 10;
+        font-size: 15px;
+        text-align: center;
+        position: relative; 
+        top: -1000px;
+        right: 7%;
+    font-size: 30px;
+    animation: weightChange 7s infinite;
+    color: #000000;
+}
